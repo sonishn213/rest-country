@@ -5,9 +5,12 @@ import CountryInfo from "./Pages/CountryInfo";
 const Router = () => {
   return (
     <Routes>
-      <Route path="/" element={<App />}>
+      <Route path="/rest-country" element={<App />}>
         <Route index element={<Home />}></Route>
-        <Route path=":countrycode" element={<CountryInfo />}></Route>
+        <Route
+          path="rest-country/:countrycode"
+          element={<CountryInfo />}
+        ></Route>
       </Route>
     </Routes>
   );
