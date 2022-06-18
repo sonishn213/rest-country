@@ -95,9 +95,7 @@ const CountryInfoBody = () => {
                   <Points
                     title="Capital: "
                     value={
-                      countries[0].capital[0]
-                        ? countries[0].capital[0]
-                        : "unknown"
+                      countries[0].capital ? countries[0].capital[0] : "unknown"
                     }
                   />
                 </div>
@@ -140,7 +138,7 @@ const CountryInfoBody = () => {
               </div>
             </div>
           </div>
-          {countries[0].capitalInfo.latlng.length > 0 && (
+          {countries[0].capitalInfo.latlng && (
             <>
               <h2 className="my-16 md:my-20 dark:text-white">In the map :</h2>
               <Maps
