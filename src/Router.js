@@ -7,10 +7,7 @@ const Router = () => {
     <Routes>
       <Route path="/rest-country" element={<App />}>
         <Route index element={<Home />}></Route>
-        <Route
-          path="rest-country/:countrycode"
-          element={<CountryInfo />}
-        ></Route>
+        <Route path=":countrycode" element={<CountryInfo />}></Route>
       </Route>
     </Routes>
   );

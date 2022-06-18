@@ -157,7 +157,7 @@ const CountryInfoBody = () => {
 const BorderTag = ({ value }) => {
   return (
     <div className="bg-white shadow-sm px-6 py-1 mr-2 mb-2  dark:bg-slate-800">
-      <Link to={"/" + value}>{value}</Link>
+      <Link to={"/rest-country/" + value}>{value}</Link>
     </div>
   );
 };

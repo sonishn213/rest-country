@@ -8,7 +8,7 @@ const HomeBody = ({ countries }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-14">
           {countries.map((country) => {
             return (
-              <Link to={"/" + country.ccn3}>
+              <Link to={"/rest-country/" + country.ccn3}>
                 <Card key={country.ccn3} country={country} />
               </Link>
             );

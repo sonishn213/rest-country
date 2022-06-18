@@ -36,7 +36,7 @@ const Navbar = () => {
       <div className="fluid-container">
         <nav className="flex justify-between py-8 ">
           <div>
-            <Link to="/">
+            <Link to="/rest-country">
               <h4 className="dark:text-white">Where in the world</h4>
             </Link>
           </div>
